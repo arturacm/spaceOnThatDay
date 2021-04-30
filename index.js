@@ -8,8 +8,19 @@ function start(){
     }})
 }
 function mostrar(obj){
-    console.log("cheguei aqui")
-    console.log(JSON.stringify(obj))
-    $("#image").attr("src", obj.url)
-    $("h1").html(obj.title)
+    //console.log("cheguei aqui");
+    //console.log(JSON.stringify(obj));
+    //$("#image").attr("src", obj.url)
+    $("#title").html(obj.title);
+    $("#explanation").html(obj.explanation);
+    if (obj.media_type == "image"){
+        $(".container").css('background-image', 'url('+obj.url+')');
+        $("iframe").attr("src", "")
+    }
+    else{
+        console.log("video!",obj.url)
+        $(".container").css('background-image', 'url("")');
+        $("iframe").attr("src", obj.url)
+    }
+
 }
