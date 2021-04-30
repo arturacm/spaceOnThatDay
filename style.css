@@ -1,6 +1,7 @@
 *,html{
     margin:0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
     background-color: black;
@@ -18,11 +19,13 @@ html{
 }
 iframe {
     object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
+    border: none;
+    
   }
   
 #title{
@@ -35,15 +38,21 @@ iframe {
     position: relative;
 }
 .content{
+    box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.507);
-    
+    height: fit-content;
     border-radius: 15px;
-    margin: 20px auto;
+    /* margin: 20px auto;  */
+    top: 30px;
+    left: 20vw;
     width: 60vw;
     padding: 15px;
     color: white;
+    cursor:move;
     /* mix-blend-mode: difference; */
-    
+}
+.content:single-button{
+    cursor:move;
 }
 #explanation{
     margin-top: 20px;
