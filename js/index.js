@@ -1,11 +1,16 @@
 let url = "https://api.nasa.gov/planetary/apod?api_key=jXsOlWB7fEPgHYhuVbn6g7bIPXJQnaI5e2Jx1avI";
 function start(){
     let date = $("#dateinput").val()
+   
     console.log(date)
     $.ajax({url: url+"&date="+ date,
     success: (result)=>{
         mostrar(result)
-    }})
+    },
+    error: ()=>{
+        alert("Selected date is not available")
+    }
+    })
 }
 function mostrar(obj){
     //console.log("cheguei aqui");
@@ -24,3 +29,4 @@ function mostrar(obj){
     }
 
 }
+document.addEventListener("DOMContentLoaded", ()=>{start()})
