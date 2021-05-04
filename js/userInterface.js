@@ -1,3 +1,5 @@
+
+//Fazendo o texto principal da tela ficar arrastavel
 $( function() {
     $( ".content" )
       .draggable({ 
@@ -8,5 +10,13 @@ $( function() {
         // scrollSensitivity: 50
       })
       
-      // .accordion()
+  } );
+
+
+  //tornado as informações extras da parte direita da tela, colapsaveis
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      active:false
+    })
   } );

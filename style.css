@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&display=swap');
 *,html{
     margin:0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-size: 20px;
+    text-shadow: 0 0 2px white;
+    
+
 }
 html{
-    background-color: black;
+    background: rgb(0,0,0);
 }
 .container{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    
+}
+main{
+    height: calc(100vh - 50px);
 }
 .date{
     align-items: center;
@@ -20,6 +31,7 @@ html{
 button, input{
     border-radius: 50px;
     padding: 10px;
+    font-size: 15px;
 }
 button:hover{
     background-color: rgba(255, 255, 255, 0.507);
@@ -54,7 +66,7 @@ iframe {
     left: 20vw;
     width: 60vw;
     padding: 15px;
-    color: white;
+    color: rgb(24, 24, 24);
     cursor:move;
     /* mix-blend-mode: difference; */
 }
@@ -63,6 +75,80 @@ iframe {
 }
 #explanation{
     margin-top: 20px;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 2px white;
+}
+#accordion{
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.507);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: fit-content;
+    text-align: right;
+    max-width: 80vw;
+    border-radius: 20px;
+    /* padding: 15px; */
+    margin-right: 5px;
+    margin-left: auto;
+    
 }
 
+#accordion h3{
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+}
+#accordion p{
+    margin-left: 15px;
+}
+#accordion div{
+    height: fit-content;
+}
+
+/* footer{
+    height:45px;
+    background-color: rgba(255, 255, 255, 0.507);
+    width: fit-content;
+    padding: 5px 5px 0 5px;
+    position: relative;
+    border-radius: 0 30px 0 0; */
+
+h1, h3{
+    
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 400px)  {
+
+    .date{
+        flex-direction: row;
+        justify-content: center;
+        top: 20px;
+    }
+    .content{
+        width: 90vw;
+        left: 5vw;
+    }
+    #explanation{
+        font-size: 16px;
+    }
+    #accordion{
+        /* flex-direction: row; */
+        max-width: 100vw;
+        height: auto;
+        margin-top: 5vh;
+    }
+    #accordion p, #accordion strong{
+        font-size: 16px;
+
+    }
+
+}
+.ui-accordion-content-active{
+    /* height:15vh; */
+    /* text-align: center; */
+    padding: 10px;
+
+}

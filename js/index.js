@@ -1,4 +1,6 @@
 let url = "https://api.nasa.gov/planetary/apod?api_key=jXsOlWB7fEPgHYhuVbn6g7bIPXJQnaI5e2Jx1avI";
+
+
 function start(){
     let date = $("#dateinput").val()
    
@@ -8,7 +10,7 @@ function start(){
         mostrar(result)
     },
     error: ()=>{
-        alert("Selected date is not available")
+        alert("The selected day is not available")
     }
     })
 }

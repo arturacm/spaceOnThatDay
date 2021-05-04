@@ -9,8 +9,8 @@
     <title>Space on that day</title>
 </head>
 
-<body>
-    <main class="container">
+<body class="container">
+    <main>
         <iframe src=""></iframe>
         <div class="date">
             <input type="date" id="dateinput" >
@@ -27,13 +27,39 @@
 
         </div>
         <!-- <img src="https://media-exp1.licdn.com/dms/image/C4D1BAQGAO9zvVhyAqQ/company-background_10000/0/1539806088038?e=2159024400&v=beta&t=5vq2-UBGsfB5RPQaOHqFEHtmdq47wFGYL27qOMblKwc" id="image" alt=""> -->
+        <div id="accordion" >
+            <h3>How to use</h3>
+            <div>
+              <p><strong>Choose a date </strong> on the top part of the page and click on the <strong>Check Date </strong> button.</p>
+              <p> A media - either a picture or a video - provided by NASA will appear on the screen </p>
+              <p>You can <strong>click and drag  </strong>the information about the media from the center of the page so you can apreciate the nice space media. </p>
+            </div>
+            <h3>About</h3>
+            <div>
+              <p>This is an independent website created by <a href="https://www.linkedin.com/in/artur-moreira/">Artur Moreira</a> that uses NASA's APOD API for presenting space media. </p>
+              <p> The media of that day - either the video or the image - will be presented on the background of the page</p>
+            
+            </div>
+            <h3>APOD</h3>
+            <div>
+              <p>One of the most popular websites at NASA is the <a href="https://apod.nasa.gov/apod/astropix.html">Astronomy Picture of the Day</a>. In fact, this website is one of the <a href="https://analytics.usa.gov/">most popular websites</a> across all federal agencies. It has the popular appeal of a Justin Bieber video. This endpoint structures the APOD imagery and associated metadata so that it can be repurposed for other applications. In addition, if the concept_tags parameter is set to True, then keywords derived from the image explanation are returned. These keywords could be used as auto-generated hashtags for twitter or instagram feeds; but generally help with discoverability of relevant imagery.</p>
+
+                <p>The full documentation for this API can be found in the <a href="https://github.com/nasa/apod-api">APOD API Github repository.</a> </p>
+            </div>
+            <!-- <h3>Section 4</h3>
+            <div>
+              <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div> -->
+          </div>
+
+
+
+        </main>
+        <!-- <footer>All rights reserved. <p>Made by <a href="https://www.linkedin.com/in/artur-moreira/">Artur Moreira</a></p></footer> -->
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="./js/index.js"></script>
         <script src="./js/userInterface.js"></script>
-        
-
-    </main>
 </body>
 
 </html>
